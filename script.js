@@ -6,7 +6,7 @@ async function get() {
     ${ data.map(actor=> `<option> ${actor.name} </option> `)}
     </select>`
     document.querySelector("select").addEventListener("change",function(){
-       // console.log("wsh0");
+       
         
         data.map(function search(actor){
               if(actor.name ==document.querySelector("select").value ){
@@ -19,9 +19,9 @@ async function get() {
                 Series that the character is involved with :  ${actor.category} </h3>
                 <h3> 
                 List of seasons that the character appeared in :  ${actor.appearance} </h3>
-                <p> </p>
+                
                 `
-                console.log("yes");
+                
               }
         })
      
